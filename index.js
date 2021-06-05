@@ -30,7 +30,7 @@ const func = (a, b) => {
   return a * b;
 };
 
-console.log(func(40, 70))
+console.log(func(40, 70));
 
 /* 
     Задание 3:
@@ -53,7 +53,7 @@ const speedOfSecond = 114;
 
 const result = speedOfFirst * time + speedOfSecond * time;
 
-console.log(result)
+console.log(result);
 
 /* 
     Задание 4:
@@ -79,7 +79,7 @@ if (randomNumber < 20) {
   console.log('randomNumber больше 20, и меньше 50');
 }
 
-console.log(randomNumber)
+console.log(randomNumber);
 
 /* 
     Задание 5:
@@ -98,4 +98,4 @@ switch (true) {
     console.log('randomNumber больше 20, и меньше 50');
 }
 
-console.log(randomNumber)
+console.log(randomNumber);
