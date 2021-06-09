@@ -2,14 +2,16 @@ const tabs = document.getElementById('tabs');
 const content = document.querySelectorAll('.content');
 const myTabs = document.getElementById('my-tabs');
 
-const changeClass = (el) => {
-  for (let i = 0; i < tabs.children.length; i++) {
-    tabs.children[i].classList.remove('active');
-  }
-  for (let i = 0; i < myTabs.children.length; i++) {
-    myTabs.children[i].classList.remove('active');
+const changeCustomClass = (arr, el) => {
+  for (let i = 0; i < arr.children.length; i++) {
+    arr.children[i].classList.remove('active');
   }
   el.classList.add('active');
+}
+
+const changeClass = (el) => {
+  changeCustomClass(tabs, el)
+  changeCustomClass(myTabs, el)
 };
 
 const bindContentWhithTabs = (currentTab) => {
