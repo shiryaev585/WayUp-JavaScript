@@ -21,8 +21,22 @@ h1 {
     align-items: center;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
 }
-.tab-btn.active {
+.my-tab {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 8px;
+    background: #fff;
+    color: #000;
+}
+.tab-btn.active,
+.my-tab.active {
     background-color: blue;
     color: #ffffff;
 }
@@ -40,4 +54,12 @@ h1 {
 
 .content.active {
     display: block;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
 }

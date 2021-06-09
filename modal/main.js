@@ -1,18 +1,15 @@
-var btnOpen = document.getElementById('btn-open');
-var modal = document.getElementById('wrapper-modal');
+const btnOpen = document.getElementById('btn-open');
+const modal = document.getElementById('wrapper-modal');
+const overlay = document.getElementById('overlay');
+const btnClose = document.getElementById('btn-close');
 
-var overlay = document.getElementById('overlay');
-var btnClose = document.getElementById('btn-close');
-
-btnOpen.addEventListener('click',function(){
-    modal.classList.add('active');
+btnOpen.addEventListener('click', () => {
+  modal.classList.add('active');
 });
 
-function closeModal(){
-    modal.classList.remove('active');
+const closeModal = () => {
+  modal.classList.remove('active');
 }
 
-overlay.addEventListener('click',closeModal);
-btnClose.addEventListener('click',closeModal);
-
-
+overlay.addEventListener('click', closeModal);
+btnClose.addEventListener('click', closeModal);
